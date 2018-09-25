@@ -1,0 +1,25 @@
+history 命令
+    位置  .bash_history
+    选项
+        -a  追加  -d #  删除指定命令   -c:  清除所有命令   -w: 把当前记录写入 .bash_history
+    调用历史命令
+        !!: 执行上一条命令
+        !STRING:执行上一条以STRING开头的命令
+        !STRING:p:打印上一条以STRING开头的命令，但不执行
+        !?STRING:执行上一条含有STRING的命令
+        !NUMBER:执行第NUMBER条历史记录中的命令
+        !$: 上一条命令的最后一个参数    ESC + .
+
+PS1变量
+    \d: 日期，格式为 weekday month date, eg., "Mon Aug 1"
+    \H: 完整主机名
+    \h: 主机的第一个名字
+    \t: 24小时格式时间, HH:MM:SS
+    \T: 12小时格式时间
+    \A: 24小时格式时间，HH:MM
+    \u: 当前用户的账号名称
+    \v: BASH版本信息
+    \w: 显示完整路径，家目录以~代替
+    \W: 利用basename取得工作目录名称，所以只会列岛最后一个目录
+    \#: 执行的第几个命令
+    \$: 提示符，如#--->root,  $--->普通用户

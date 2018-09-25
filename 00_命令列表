@@ -1,0 +1,180 @@
+Linux常用名利列表
+
+文件和目录
+    pwd
+    cd
+    tree
+    mkdir
+    touch
+    ls
+    cp
+    mv
+    rm
+    rmdir
+    ln
+    readlink
+    find
+    xargs
+    rename
+    basename
+    dirname
+    chattr
+    lsattr
+    file
+    md5sum
+    chown
+    chmod
+    chgrp
+    umask
+
+文件过滤及内容编辑处理
+    cat
+    tac
+    more
+    less
+    head
+    tail
+    tailf
+    cut
+    split
+    paste
+    sort
+    join
+    uniq
+    wc
+    iconv
+    dos2unix
+    diff
+    vimdiff
+    rev
+    tr
+    od
+    tee
+
+文本处理
+    grep
+    sed
+    awk
+
+文件信息及搜索
+    uname
+    hostname
+    dmesg
+    stat
+    du
+    date
+    echo
+    watch
+    which
+    whereis
+    locate
+    updatedb
+
+压缩
+    tar
+    gzip
+    zip
+    unzip
+    rsync
+    scp
+
+用户管理
+    useradd
+    usermod
+    userdel
+    groupadd
+    groupddel
+    passwd
+    chage
+    chpasswd
+    su
+    visudo
+    sudo
+    id
+    w:
+    who
+    users
+    whoami
+    last
+    lastb
+    lastlog
+
+磁盘管理
+    fdisk
+    partprobe
+    tune2fs
+    parted
+    mkfs
+    dupme2fs
+    resize2fs
+    fsck
+    dd
+    mount
+    umount
+    df
+    mkswap
+    swapon
+    swapoff
+    sync
+
+系统管理
+    lsof
+    uptime
+    free
+    iftop
+    vmstat
+    mpstat
+    iostat
+    sar
+    chkconfig
+    ntsysv
+    setup
+    ethtool
+    mii-tool
+    dmidecode
+    lspci
+    ipcs
+    ipcrm
+    rpm
+    yum
+
+网络管理
+    ifconfig
+    ifup
+    ifdown
+    route
+    arp
+    ip
+    netstat
+    ss
+    ping
+    traceroute
+    arping
+    telnet
+    nc
+    ssh
+    wget
+    mailq
+    mail
+    nslookup
+    dig
+    host
+    nmap
+    tcpdump
+
+进程命令
+    ps
+    pstree
+    pgrep
+    kill
+    killall
+    pkill
+    top
+    nice
+    renice
+    nohup
+    strace
+    ltrace
+    runlevel
+    init
+    service
