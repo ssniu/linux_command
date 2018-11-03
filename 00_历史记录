@@ -11,6 +11,9 @@ history 命令
         !$: 上一条命令的最后一个参数    ESC + .
 
 PS1变量
+    在/etc/bashrc 或者 ~/.bashrc 中定义
+        PS1='\h:\W \u\$ '
+    
     \d: 日期，格式为 weekday month date, eg., "Mon Aug 1"
     \H: 完整主机名
     \h: 主机的第一个名字
