@@ -10,6 +10,10 @@ history 命令
         !NUMBER:执行第NUMBER条历史记录中的命令
         !$: 上一条命令的最后一个参数    ESC + .
 
+忽略空白开头或者重复的命令
+    $vi .bashrc
+    HISTCONTROL=ignoreboth   <===space, dups  <---space start, duplicates
+
 PS1变量
     在/etc/bashrc 或者 ~/.bashrc 中定义
         PS1='\h:\W \u\$ '
