@@ -49,6 +49,11 @@ chmod   改变文件或目录的权限模式
     rwx 增减
         $sudo chmod u-x /path/to/file  ==> g+x   o+r
 
+chown: 改变文件的属主，也可同时更改文件的属组
+    $chown -R new_user:new_grp target_file
+    $chown -R new_user target_file
+    
+chgrp: 改变文件的属组
 
 
 umask
@@ -79,7 +84,7 @@ umask
             - 发起者在文件的属组内，则拥有属组权限
             - 否则，进程拥有应用文件的其他权限
 
-    3. SUID
+    3. SUID 位
         可执行文件设定 SUID 后，进程发起后，进程的属主不是发起者
         - 任何一个可执行文件能否启动为进程，取决于发起者是否有执行权限
         - 进程启动后，进程的属主不是发起者，而是可执行文件的属主
@@ -91,7 +96,7 @@ umask
             chmod u+s file...
             chmod u-s file...
 
-    4. SGID
+    4. SGID 位
         默认，用户创建文件时，该文件属组是创建者所在的基本组
         一旦目录设定了 SGID，对此目录有写权限的用户，在该目录下创建的文件的属组，不再是该用户
         的基本组，而是该目录的属组
@@ -99,7 +104,7 @@ umask
         设定目录的 SGID
             chmod g+s DIR
             chmod g-s DIR
-    5. Sticky
+    5. Sticky位
         对于一个多人可写的目录，如果设置了 sticky, 则每个人只能删除自己的文件，不能删除其他人
         文件
             chmod o+t DIR
